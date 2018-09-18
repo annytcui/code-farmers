@@ -2,3 +2,8 @@ anny:
   name: Anny Cui
   email: anny.cui@cutey.com
   password_digest: <%= User.digest('password') %>
+
+mark:
+  name: Mark Pan
+  email: mark.pan@sheetupid.com
+  password_digest: <%= User.digest('password') %>
