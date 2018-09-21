@@ -7,3 +7,20 @@ mark:
   name: Mark Pan
   email: mark.pan@sheetupid.com
   password_digest: <%= User.digest('password') %>
+
+pikachu:
+  name: Pikachu Pan
+  email: pikachu.pan@cutey.com
+  password_digest: <%= User.digest('password') %>
+
+panda:
+  name: Panda Pan
+  email: panda.pan@sheetupid.com
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+  user_<%= n %>:
+    name: <%= "User #{n}" %>
+    email: <%= "user-#{n}@example.com" %>
+    password_digest: <%= User.digest('password') %>
+<% end %>
