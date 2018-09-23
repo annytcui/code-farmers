@@ -2,6 +2,7 @@ anny:
   name: Anny Cui
   email: anny.cui@cutey.com
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 mark:
   name: Mark Pan
