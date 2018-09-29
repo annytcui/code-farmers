@@ -18,6 +18,26 @@ most_recent:
   created_at: <%= Time.zone.now %>
   user: anny
 
+sheetupid:
+  content: "Hi, I am sheetupid."
+  created_at: <%= 2.years.ago %>
+  user: mark
+
+pandada:
+  content: "Hi, I am Pandada."
+  created_at: <%= 3.days.ago %>
+  user: mark
+
+charismatic:
+  content: "Hi, I am charismatic."
+  created_at: <%= 10.minutes.ago %>
+  user: pikachu
+
+charming:
+  content: "Hi, I am charming."
+  created_at: <%= 4.hours.ago %>
+  user: pikachu
+
 <% 30.times do |n| %>
 microposts_<%= n %>:
   content: <%= Faker::Lorem.sentence(5) %>
