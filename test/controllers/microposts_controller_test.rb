@@ -17,6 +17,6 @@ class MicropostsControllerTest < ActionDispatch::IntegrationTest
     assert_no_difference 'Micropost.count' do
       delete micropost_path(@micropost)
     end
-    assert_redirected_to logged_url
+    assert_redirected_to login_url
   end
 end
